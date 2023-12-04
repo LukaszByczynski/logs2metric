@@ -1,1 +1,6 @@
-argparse=1.4.0
+argparse==1.4.0
+ipykernel==6.27.1
+jupyter==1.0.0
+apache_beam==2.52
+apache-beam[interactive]==2.52
+apache-beam[dataframe]==2.52

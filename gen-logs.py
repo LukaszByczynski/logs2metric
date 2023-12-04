@@ -8,7 +8,7 @@ def gen_logs(ts, duration, output):
   with open(output, 'w') as f:
     while duration > 0:
       events = 10_000
-      timestamps = sorted(random.sample(range(ts, ts + 59_999),  20_000))
+      timestamps = sorted(random.sample(range(ts, ts + 59_999),  events))
 
       for t in timestamps:
         f.write(f'created={int(t/1000)}&hostname={random.choice(hostnames)}&uid={random.choice(users)}\n')
